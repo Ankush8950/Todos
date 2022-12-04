@@ -1,3 +1,0 @@
-1. Add registration page.
-2. login page .
-3. show the all details in getUsers.
