@@ -1,7 +1,6 @@
 // user model
 const User = require("../model/userModel")
 
-
 // logic
 // Home router
 exports.home = (req,res)=>{
@@ -65,7 +64,7 @@ exports.searchUser = async (req,res) =>{
     try {
         const data = await User.find({
             "$or":[
-                {name: {$regex:req.params.key}}
+                {name: {$regex:req.params.id}}
             ]
         })
 
